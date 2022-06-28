@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         sB.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-
+                Toast.makeText(MainActivity.this,"Progress of the Seekbar: "+i,Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -52,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+
 
     }
 }
